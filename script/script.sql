@@ -33,7 +33,7 @@ CREATE TABLE rendez_vous (
     id_slot INT NOT NULL,
     prix DECIMAL(10, 2) NOT NULL,
     id_vehicule INT NOT NULL,
-    payee INT ENUM(1,0),
+    date_payement DATE,
     FOREIGN KEY (id_service) REFERENCES service(id),
     FOREIGN KEY (id_slot) REFERENCES slot(id),
     FOREIGN KEY (id_vehicule) REFERENCES vehicule(id)
